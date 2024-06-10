@@ -1,0 +1,45 @@
+.My-L {
+  width: 100vw;
+  z-index: 9;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.My-L h1 {
+  background: hsla(0, 0%, 95%, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 1px hsla(0, 0%, 0%, 0.2);
+  padding: 1rem;
+  margin-inline: 60px;
+  position: fixed;
+  top: 260px;
+  font-size: 30px;
+  transform-origin: bottom;
+  scale: 0;
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.My-L h1 p {
+  font-size: 24px;
+  line-height: normal;
+  font-weight: normal;
+}
+
+.My-L h1.active {
+  animation: scaling 800ms cubic-bezier(0.175, 0.885, 0.32, 1.1) forwards;
+}
+
+@keyframes scaling {
+  to {
+    scale: 1;
+    top: 210px;
+  }
+}
+
+.svg-icon--dribbble{
+  transition: 200ms;
+}
